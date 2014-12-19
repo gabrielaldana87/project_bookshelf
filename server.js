@@ -49,6 +49,16 @@ var server = http.createServer(function(request,response)
           var Life_of_Chopin = new Book("Life of Chopin","Life_of_Chopin.txt", "/Life_of_Chopin");
           var search = [Life_of_Chopin];
           response.end(page);
+
+          for(i=0;i<search.length;i++)
+             { console.log("im in the loop")};
+              //  if(request.url===search[i].url)
+              //    {
+              //    console.log("im in the book!");
+              //    search[i].createHTML(index);
+              //    response.end("<html><body><p>I'm in the book</p></body></html>")
+              //    }
+             //}
         })
 
       })
